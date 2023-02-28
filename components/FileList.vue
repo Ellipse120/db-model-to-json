@@ -8,6 +8,23 @@ const del = async (name) => {
 
   execute();
 };
+
+const delAll = async () => {
+  await useFetch(`/api/files`, {
+    method: "delete",
+    query: {
+      all: true,
+    },
+  });
+
+  execute();
+};
+
+const refresh = execute;
+
+defineExpose({
+  refresh,
+});
 </script>
 
 <template>
@@ -18,6 +35,13 @@ const del = async (name) => {
       @click="execute"
     >
       Refresh
+    </button>
+
+    <button
+      class="bg-red-500 text-white text-2xl px-4 py-2 rounded-2xl m-2"
+      @click="delAll"
+    >
+      Delete All
     </button>
   </div>
 
