@@ -2,7 +2,7 @@
 export default defineNuxtLink({
   componentName: "MyNuxtLink",
   externalRelAttribute: "",
-  prefetchedClass: "",
+  prefetchedClass: "transition-all duration-400 hover:(text-lime-500)",
   activeClass: "text-blue-500",
   exactActiveClass: "",
 });
