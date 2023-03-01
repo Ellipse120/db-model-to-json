@@ -1,19 +1,10 @@
-<script setup></script>
-
 <template>
-  <div class="bg-black text-2xl">
-    <NuxtLink to="/">
-      <span class="text-white">首页</span>
-    </NuxtLink>
-    <NuxtLink to="/files">
-      <span class="text-white">XML2JS</span>
-    </NuxtLink>
+  <div class="bg-black text-2xl text-white">
+    <div class="flex items-center gap-4 text-2xl p-4 font-bold font-script">
+      <MyNuxtLink to="/">首页</MyNuxtLink>
+      <MyNuxtLink to="/files">XML2JS</MyNuxtLink>
+    </div>
   </div>
+
   <slot />
 </template>
-
-<style>
-.router-link-active {
-  background-color: rgb(0, 47, 255);
-}
-</style>
