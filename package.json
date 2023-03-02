@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@unocss/nuxt": "^0.50.1",
-    "nuxt": "^3.2.2",
+    "nuxt": "^3.2.3",
     "nuxt-lodash": "^2.4.1"
   },
   "dependencies": {
